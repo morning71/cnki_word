@@ -64,11 +64,7 @@ class CnkiNewSpiderSpiderMiddleware(object):
 
 class BaiduSpiderProxyIPDownloadMiddleware(object):
     def __init__(self):
-        # self.url = 'http://www.xiongmaodaili.com/xiongmao-web/api/glip?secret=3444673712b38f300e4a4a8f5f11cd54&orderNo=GL20190812135154803i8gg7&count=1&isTxt=1&proxyType=1'
-        # self.url = 'http://webapi.http.zhimacangku.com/getip?num=1&type=1&pro=0&city=0&yys=0&port=1&time=1&ts=0&ys=0&cs=0&lb=1&sb=0&pb=4&mr=2&regions='
-        # self.url = 'http://www.xiongmaodaili.com/xiongmao-web/api/glip?secret=3444673712b38f300e4a4a8f5f11cd54&orderNo=GL20191009010447RVl0Nap3&count=1&isTxt=1&proxyType=1'
-        self.url = 'http://www.xiongmaodaili.com/xiongmao-web/api/glip?secret=3444673712b38f300e4a4a8f5f11cd54&orderNo=GL20200927233750fHgLFdut&count=1&isTxt=1&proxyType=1'
-        # self.url = 'http://kuyukuyu.com/api/projects/get?uuid=4363edc5-8c07-4f6b-a5fc-215f23f7eb12'
+        self.url = '第三方动态代理IP接口'
         self.proxy = ''
         self.expire_datetime = datetime.datetime.now() - datetime.timedelta(seconds=10)
         # self._get_proxyip()
@@ -94,11 +90,11 @@ class BaiduSpiderProxyIPDownloadMiddleware(object):
 import base64
 
 # 代理服务器
-proxyServer = "http://http-dyn.abuyun.com:9020"
+proxyServer = "隧道类代理IP端口"
 
 # 代理隧道验证信息
-proxyUser = "H2190R3707TZ51GD"
-proxyPass = "7EAA5CF92B387D3B"
+proxyUser = ""
+proxyPass = ""
 
 # # for Python2
 # proxyAuth = "Basic " + base64.b64encode(proxyUser + ":" + proxyPass)
